@@ -1,0 +1,156 @@
+#Resume {
+            display: none; /* Hide the container by default */
+            padding: 20px; /* Add padding for better readability */
+            border: 1px solid #ccc; /* Add a border */
+            margin-top: 20px; /* Add space above the container */
+        }
+
+        /* Styling for the headings */
+        .name, .phno, .mail, .career, .keyskills, .project, .Pname, .Pfname, .Dob, .maritical, .Language, .Declaration, .Place, .Date {
+            font-weight: bold; /* Make headings bold */
+        }
+		.name{
+			border:2px solid transparent;
+			
+			
+			
+		}
+		#display_name
+		{
+			text-align:center;
+			color:white;
+			font-size:25px;
+			text-transform:uppercase;
+			padding-top:15px;
+			
+			
+		}
+		#ph_mail {
+				display: flex; /* Use flexbox */
+				justify-content: space-between; /* Align items with space between */
+				
+			}
+			#ph_mail lable{
+				text-decoration:bold;
+			}
+		.phno{
+			border:2px solid transparentrant;
+			margin:0vh 50vh 0vh 0vh;
+			padding:0vh 0vh 0vh 0vh;
+			
+			
+		}
+		#display_phno
+		{
+			text-align:center;
+			letter-spacing:2px;
+			
+		}
+		.mail{
+			border:2px solid transparent;
+			margin:0vh 0vh 0vh 0vh;
+			padding:1px;
+			padding:1px;
+			
+			
+		}
+		
+		#display_email
+		{
+			border:2px solid transparent;
+			font-size:17px;
+			margin-right:5vh;
+		}
+		#display_career{
+			text-align:justify;
+			font-weight:normal;
+		}
+		#display_key_skills{
+			text-align:justify;
+			font-weight:normal;
+		}
+		#display_project_title{
+			text-align:justify;
+			font-weight:bold;
+			text-transform:uppercase;
+			text-align:center;
+		}
+		#display_project_desc{
+			text-align:justify;
+			font-weight:bold;
+			text-transform:capitalize;
+			font-weight:normal;
+			
+		}
+		#display_Pname, #display_Pfname, #display_dob, #display_gender, #display_Maritical, #display_Lang{
+			text-transform:capitalize;
+			font-weight:normal;
+		}
+        /* Styling for the displayed data */
+        #Resume > div {
+            margin-bottom: 10px; /* Add space between elements */
+        }
+
+        /* Styling for the table */
+        #displayArea table {
+            border-collapse: collapse; /* Collapse table borders */
+            width: 100%; /* Set table width to 100% */
+        }
+
+        #displayArea th, #displayArea td {
+            border: 1px solid #ddd; /* Add border to table cells */
+            padding: 8px; /* Add padding to table cells */
+            text-align: left; /* Align text to the left */
+        }
+
+        #displayArea th {
+            background-color: #f2f2f2; /* Add background color to table header cells */
+        }
+
+        /* Styling for the declaration paragraph */
+        #display_declaration {
+            font-style: italic; /* Make declaration text italic */
+        }
+
+        /* Styling for place and date */
+        #display_place, #display_date {
+            margin-top: 10px; /* Add space */
+        }
+		div {
+    margin-bottom: 10px; /* Adjust as needed for spacing between sections */
+}
+
+		label {
+			display: inline-block;
+			width: 150px; /* Adjust as needed for label width */
+			text-align: left;
+			margin-right: 10px; /* Adjust as needed for spacing between label and data */
+		}
+
+		div.Pname,
+		div.Pfname,
+		div.Dob,
+		div#display_gender,
+		div.maritical,
+		div.Language {
+			display: inline-block;
+			width: calc(100% - 170px); /* Adjust considering label width and margin */
+			vertical-align: top;
+			font-weight:none;
+			justify-content: flex-end;
+		}
+		#personl_details{
+			margin-left:18vh;
+		}
+		#Rbody{
+			
+			
+			margin:0vh 10vh 0vh 10vh;
+		}
+		.Declaration{
+			margin-left:5vh;
+		}
+		 #display_place,
+		 #display_date{
+			 display:inline-block;
+		 }

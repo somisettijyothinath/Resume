@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+	<link rel="stylesheet" href="resume.css">
+	<style>
+	
+			#Resume{
+				margin:0vh 40vh 0vh 20vh;
+				
+			}
+			#Dhead{
+				background-color:blue;
+				height:20vh;
+			}
+			#personl_details {
+        display: table;
+    }
+
+    #personl_details > div {
+        display: table-row;
+        margin-bottom: 10px; /* Adjust the space between each label-value pair */
+    }
+
+    #personl_details > div > label {
+        display: table-cell;
+        width: 200px; /* Adjust the width as needed */
+        text-align: right;
+        padding-right: 10px; /* Adjust spacing as needed */
+    }
+
+    #personl_details > div > div {
+        display: table-cell;
+    }
+	
+	<!--	RessumeForm Styles  -->
+	
+	body {
+    font-family: Arial, sans-serif;
+}
+
+/* Define the animation keyframes */
+@keyframes borderAnimation {
+  0% {
+    border-color: red;
+  }
+  50% {
+    border-color: blue;
+  }
+  100% {
+    border-color: green;
+  }
+}
+
+/* Apply animated border style to the form */
+form {
+  max-width: 123vh;
+  margin: 0 auto;
+  padding:10vh;
+  border-style: outset;
+  border-width: 6px; /* Increase border width */
+  animation: borderAnimation 3s infinite alternate;
+  background-color:#898680;
+}
+
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+	 border: none;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0px 8px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#dec p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.head{
+	margin:0vh 20vh 0vh 20vh;
+	padding:10px 10px 0px 10px;
+	background-color:transparent;
+}
+#carobj p{
+	text-align:justify;
+}
+
+.person_details{
+	margin:0vh 20vh 0vh 20vh;
+	padding:10px 10px 0px 10px;
+	background-color:transparent;
+}
+ .button {
+        text-align: center; /* Center-align the button */
+    }
+
+    .button input[type="submit"] {
+        background-color: #4CAF50; /* Green background */
+        color: white; /* White text */
+        padding: 10px 20px; /* Padding for the button */
+        border: none; /* Remove button border */
+        cursor: pointer; /* Cursor style on hover */
+        border-radius: 5px; /* Rounded corners */
+        text-align: center; /* Center-align the button text */
+        display: inline-block; /* Make the button inline-block */
+        text-decoration: none; /* Remove underline */
+    }
+
+    /* Change button color on hover */
+    .button input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+
+		
+	</style>
+</head>
+<body>
+
+<form id="ResumeForm" onsubmit="return false;">
+		<center><h1 style="color:#8E26B6;">RESUME</h1></center>
+    <div class="head">
+        <div class="fname">
+           <b> NAME:</b><input type="text" id="Uname" name="uname"><br><br>
+        </div>
+        <div class="">
+           <b> PHONE NO:</b><input type="text" id="Uphno" name="phno"><br><br>
+        </div>
+        <div class="">
+            <b>EMAIL:</b><input type="text" id="Uemail" name="mail"><br><br>
+        </div>
+    </div>
+    <div id="carobj">
+        <b>CAREER OBJECTIVE</b>
+        <p>
+            To seek career opportunity in reputed and well-formed
+            organization where I can explore my skills and knowledge 
+            for organizational and personal growth.Looking an environment 
+            to continuously learn, constantly grow, dedicatedly contribute,
+            and significantly shine along with the organization
+        </p><br><br>
+    </div>
+    <div id="kskills">
+        <label>KEY SKILLS</label><br><br>
+        <textarea placeholder="Technical skills" id="ts"></textarea><br><br>
+        <textarea placeholder="Communication skills" id="cs"></textarea><br><br>
+        <textarea placeholder="Personality traits skills" id="pts"></textarea><br><br>
+    </div>
+
+    <b>ACADEMIC QUALIFICATION</b>
+    <div id="aq">
+	<br>
+        <table>
+            <tr>
+                <th>YEAR</th>
+                <th>COURSE</th>
+                <th>COLLEGE NAME</th>
+                <th>LOCATION</th>
+                <th>MARKS(%)</th>
+            </tr>
+            <tr>
+                <td><input id="pgYear" type="number" placeholder="PG"></td>
+                <td><input id="pgCourse" type="text" placeholder="PG"></td>
+                <td><input id="pgCollege" type="text" placeholder="PG"></td>
+                <td><input id="pgLocation" type="text" placeholder="PG"></td>
+                <td><input id="pgMarks" type="number" placeholder="PG"></td>
+            </tr>
+            <!-- Repeat similar structure for other academic qualifications -->
+			
+										<tr>
+											<td><input id="ugYear" type="number" placeholder="UG"></td>
+											<td><input id="ugCourse" type="text" placeholder="UG"></td>
+											<td><input id="ugCollege" type="text" placeholder="UG"></td>
+											<td><input id="ugLocation" type="text" placeholder="UG"></td>
+											<td><input id="ugMarks" type="number" placeholder="UG"></td>
+										</tr>
+    
+										<tr>
+											<td><input id="interYear" type="number" placeholder="INTER"></td>
+											<td><input id="interCourse" type="text" placeholder="INTER"></td>
+											<td><input id="interCollege" type="text" placeholder="INTER"></td>
+											<td><input id="interLocation" type="text" placeholder="INTER"></td>
+											<td><input id="interMarks" type="number" placeholder="INTER"></td>
+										</tr>
+
+										<tr>
+											<td><input id="sscYear" type="number" placeholder="SSC"></td>
+											<td><input id="sscCourse" type="text" placeholder="SSC"></td>
+											<td><input id="sscCollege" type="text" placeholder="SSC"></td>
+											<td><input id="sscLocation" type="text" placeholder="SSC"></td>
+											<td><input id="sscMarks" type="number" placeholder="SSC"></td>
+										</tr>
+									
+        </table>
+    </div>
+	<br>
+    <div id="ps">
+        <b>PROJECT SUMMARY</b>
+		<br><br>
+        <b>PROJECT TITLE:</b><input type="text" id="pt" placeholder="please enter your project title"><br><br>
+        <b>PROJECT DESCRIPTION:</b><textarea id="pd" placeholder="please enter your project description"></textarea><br><br>
+    </div>
+
+    
+        <b>PERSONAL DETAILS</b><br><br>
+			<div class="person_details">
+			
+			<b>NAME :  </b><input type="text" id="pname" placeholder="enter your name"><br><br>
+             
+			<b>FATHER'S NAME:</b> <input type="text" id="pfname" placeholder="s/o"><br><br>
+									
+			<b>D.O.B: </b><input type="date" id="dob" placeholder="enter your date of birth"><br><br>
+			
+			<b>GENDER: </b>  <input type="radio" id="male" name="gender" value="MALE"> Male
+					  <input type="radio" id="female" name="gender" value="FEMALE"> Female
+					  <input type="radio" id="others" name="gender" value="OTHERS">	Others<br><br>
+
+
+				
+			<b>MARITAL STATUS:</b> <input type="text" id="ms" placeholder="enter your marital status"><br><br>
+									
+			<b>LANGUAGE: </b> <input type="text" id="lang" placeholder="enter known languages"><br><br>
+			
+    </div>
+
+    <div id="dec">
+        <label>DECLARATION</label>
+        <p>	I here by declare that above said information
+            is true and genuine to the best of my 
+            knowledge.
+        </p>
+    </div>
+	<div>
+    <b>PLACE:</b><input type="text" id="place" /><br><br>
+    <b>DATE:</b><input type="date" id="date" /><br><br>
+	</div>
+	<div class="button">
+    <input type="submit" value="SUBMIT" onclick="generate()">
+	</div>
+</form>
+
+		<!--   DISPLAYING DATA INTO ANOTHER FORM-->
+
+<div id="Resume" style="display: none;">
+    <div id="Dhead">
+    <div class="name" id="display_name"></div><BR>
+	<div id=ph_mail>
+			<div class="phno" id="display_phno"></div>
+		<div class="mail" id="display_email"></div>
+	</div>
+   </div>
+   <div id="Rbody">
+   <b><U>CAREER OBJECTIVE:</U></b> </br><br><div class="career" id="display_career"></div><br><br>
+    <b><u>KEY SKILLS</u></b></br><br><div class="keyskills" id="display_key_skills"></div><br><br>
+    <u><b>ACADEMIC QUALIFICATIONS</u><BR><BR><div class="table" id="displayArea"></div><br><br>
+	<b><u>PROJECT SUMMARY</u><br><br> <div class="project_title" id="display_project_title"></div><br>
+	 <div class="project_desc" id="display_project_desc"></div>
+	 
+	 
+	 <b><u>PERSONAL DETAILS</u><br><br>  <div id="personl_details">
+    <div> 
+        <label>NAME :</label>
+        <div class="Pname" id="display_Pname"></div>
+    </div>
+	<br>
+    <div>
+        <label>FATHER'S NAME :</label>
+        <div class="Pfname" id="display_Pfname"></div>
+    </div>
+	<br>
+    <div>
+        <label>D.O.B:</label>
+        <div class="Dob" id="display_dob"></div>
+    </div>
+	<br>
+    <div>
+        <label>GENDER:</label>
+        <div id="display_gender"></div>
+    </div>
+	<br>
+    <div>
+        <label>MARITAL STATUS:</label>
+        <div class="maritical" id="display_Maritical"></div>
+    </div>
+	<br>
+    <div>
+        <label>LANGUAGE:</label>
+        <div class="Language" id="display_Lang"></div>
+    </div>
+</div>
+
+	<u><b>DECLARATION</u><br><br><div class="Declaration"  id="display_declaration"></div>
+	 <BR><b>PLACE: <div class="Place" id="display_place"></div><br>
+	 <b>DATE: <div class="Date" id="display_date"></div>
+	 
+</div>
+</div>
+
+					<!-- SCRIPT CODE-->
+
+<script>
+    function generate() {
+        var name = document.getElementById('Uname').value;
+        var phno = document.getElementById('Uphno').value;
+        var mail = document.getElementById('Uemail').value;
+        var career = document.getElementById('carobj').querySelector('p').innerText;
+        var keyskills= document.getElementById('ts').value + '\n' +
+            document.getElementById('cs').value + '\n' +
+            document.getElementById('pts').value;
+        var aca_qua = displayQualifications();
+		var project_title= document.getElementById('pt').value ;
+		var project_desc = document.getElementById('pd').value;
+		var Pname = document.getElementById('pname').value;
+        var Pfname = document.getElementById('pfname').value;
+        var Dob = document.getElementById('dob').value;
+		var maritical = document.getElementById('ms').value;
+		var Language = document.getElementById('lang').value;
+		var Declaration = document.getElementById('dec').querySelector('p').innerText;
+		var Place= document.getElementById('place').value;
+		var Date= document.getElementById('date').value;
+		var gender;
+    if (document.getElementById('male').checked) {
+        gender = document.getElementById('male').value;
+    } else if (document.getElementById('female').checked) {
+        gender = document.getElementById('female').value;
+    } else if (document.getElementById('others').checked) {
+        gender = document.getElementById('others').value;
+    } 
+  
+        document.getElementById('display_name').innerText =  name;
+        document.getElementById('display_phno').innerText = phno;
+        document.getElementById('display_email').innerText =  mail;
+        document.getElementById('display_career').innerText = career;
+        document.getElementById('display_key_skills').innerText =  keyskills;
+		document.getElementById('display_project_title').innerText =  project_title;
+		document.getElementById('display_project_desc').innerText =  project_desc;
+		document.getElementById('display_Pname').innerText =  Pname;
+		document.getElementById('display_Pfname').innerText =  Pfname;
+		document.getElementById('display_dob').innerText =  Dob;
+		 document.getElementById('display_gender').innerText = gender;
+		document.getElementById('display_Maritical').innerText =  maritical;
+		document.getElementById('display_Lang').innerText =  Language;
+		document.getElementById('display_declaration').innerText = Declaration;
+		document.getElementById('display_place').innerText= Place;
+		document.getElementById('display_date').innerText= Date;
+        document.getElementById('ResumeForm').style.display = 'none';
+        document.getElementById('Resume').style.display = 'block';
+    }
+		
+
+    function displayQualifications() {
+        var pgYear = document.getElementById("pgYear").value;
+        var pgCourse = document.getElementById("pgCourse").value;
+        var pgCollege = document.getElementById("pgCollege").value;
+        var pgLocation = document.getElementById("pgLocation").value;
+        var pgMarks = document.getElementById("pgMarks").value;
+
+        // Similarly, get values for other academic qualifications
+
+				var ugYear = document.getElementById("ugYear").value;
+				var ugCourse = document.getElementById("ugCourse").value;
+				var ugCollege = document.getElementById("ugCollege").value;
+				var ugLocation = document.getElementById("ugLocation").value;
+				var ugMarks = document.getElementById("ugMarks").value;
+
+				var interYear = document.getElementById("interYear").value;
+				var interCourse = document.getElementById("interCourse").value;
+				var interCollege = document.getElementById("interCollege").value;
+				var interLocation = document.getElementById("interLocation").value;
+				var interMarks = document.getElementById("interMarks").value;
+
+				var sscYear = document.getElementById("sscYear").value;
+				var sscCourse = document.getElementById("sscCourse").value;
+				var sscCollege = document.getElementById("sscCollege").value;
+				var sscLocation = document.getElementById("sscLocation").value;
+				var sscMarks = document.getElementById("sscMarks").value;
+
+        var table =	
+							"<table border='1'>" +
+							"<tr><th>Qualification</th><th>Year</th><th>Course</th><th>College Name</th><th>Location</th><th>Marks (%)</th></tr>" +
+							"<tr><td>PG</td><td>" + pgYear + "</td><td>" + pgCourse + "</td><td>" + pgCollege + "</td><td>" + pgLocation + "</td><td>" + pgMarks + "%</td></tr>" +
+							"<tr><td>UG</td><td>" + ugYear + "</td><td>" + ugCourse + "</td><td>" + ugCollege + "</td><td>" + ugLocation + "</td><td>" + ugMarks + "%</td></tr>" +
+							"<tr><td>INTER</td><td>" + interYear + "</td><td>" + interCourse + "</td><td>" + interCollege + "</td><td>" + interLocation + "</td><td>" + interMarks + "%</td></tr>" +
+							"<tr><td>SSC</td><td>" + sscYear + "</td><td>" + sscCourse + "</td><td>" + sscCollege + "</td><td>" + sscLocation + "</td><td>" + sscMarks + "%</td></tr>" +
+							"</table>";
+
+        var displayArea = document.getElementById("displayArea");
+        displayArea.innerHTML = table;
+    }
+	
+</script>
+
+</body>
+</html>
